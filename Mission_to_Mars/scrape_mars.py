@@ -13,8 +13,8 @@ def scrape():
     url = 'https://redplanetscience.com/'
     browser.visit(url)
 
-    html = browser.html
-    soup = bs(html, 'html.parser')
+    html = browser.html 
+    soup = bs(html, 'html.parser') 
 
     results = soup.find('div', class_="list_text")
     title = results.find_all('div', class_='content_title')[0].text
