@@ -20,80 +20,57 @@
 
           <!-- Latest News -->
         <div class="container-fluid">
-          <div class="middle">
-            <div class = "row">
-              <div col-md-12>
-                <h2 class = text-left> Latest Mars News </h2> 
-                  <h4><strong>{{Mars.title}}</strong></h4>
-                  <h5>{{Mars.blurb}}</h5>
-              </div>
-            </div>
+          <div col-md-12>
+            <h2 class = text-left> Latest Mars News </h2> 
+              <h4><strong>{{Mars.title}}</strong></h4>
+              <h5>{{Mars.blurb}}</h5>
           </div>
         </div>
         
         <!-- Featured Image -->
         <div class="container-fluid">
-          <div class="middle">
-            <div class="row">
-              <div class="middle">
-                <div class="content-single">
                   <h2 class="pic-title"> Featured Mars Image</h2>
                   <img src="{{Mars.image}}" width="800" height="730" alt="Mars">
-                </div>
-              </div>
+        </div>
+
         <!-- Facts Table -->              
-              <div class="middle">
-                <div class="sidetable">
-                <h2> Mars Facts </h2>
-                  <table class="table table-stripped">
-                    <tbody>{{Mars.html_convert}}</tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>  
-        </div>
-    
-        <!--display the hemispheres' images and titles-->
+          <div class>
+            <h2> Mars Facts </h2>
+              <table class>
+                <tbody>{{Mars.html_convert}}</tbody>
+              </table>
+          </div>   
+
+        <!-- display the hemispheres' images and titles -->
         <div class="container-fluid">
-            <h2 class="text-center">Mars Hemispheres</h2>
-            <div class="row">
-                <div class="hemisphere">
-                  <div class="thumbnail">
-                    <img src="../../Images/Hemisphere1.jpg">
-                  </div>
-                  <div class="caption">
-                    <h4>Cerberus Hemisphere Enhanced</h4>
-                  </div>
-                </div>
-                <div class="hemisphere">
-                  <div class="thumbnail">
-                    <img src="../../images/Hemisphere2.jpg">
-                  </div>
-                  <div class="caption">
-                    <h4>Schiaparelli Hemisphere Enhanced</h4>
-                  </div>
-                </div>
-                <div class="hemisphere">
-                  <div class="thumbnail">
-                    <img src="../../images/Hemisphere3.jpg">
-                  </div>
-                  <div class="caption">
-                    <h4>Syrtis Major Hemisphere Enhanced</h4>
-                  </div>
-                </div>
-                <div class="hemisphere">
-                  <div class="thumbnail">
-                    <img src="../../images/Hemisphere4.jpg">
-                  </div>
-                  <div class="caption">
-                    <h4>Valles Marineris Hemisphere Enhanced</h4>
-                  </div>
-                </div>
+          <h2 class="text-center">Mars Hemispheres</h2>
+            <div class="col-sm-3">
+              <div class="thumbnail">
+                <img src="../../Images/Hemisphere1.jpg">
+              </div>
+              <h4>Cerberus Hemisphere Enhanced</h4>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="thumbnail">
+                <img src="../../Images/Hemisphere2.jpg">
+              </div>
+              <h4>Schiaparelli Hemisphere Enhanced</h4>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="thumbnail">
+                <img src="../../Images/Hemisphere3.jpg">
+              </div>
+              <h4>Syrtis Major Hemisphere Enhanced</h4>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="thumbnail">
+                <img src="../../Images/Hemisphere4.jpg">
+              </div>
+              <h4>Valles Marineris Hemisphere Enhanced</h4>
             </div>
         </div>
-              
-       
       </body>
-      
     </html>
